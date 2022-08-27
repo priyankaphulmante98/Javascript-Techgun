@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inline style -->
+
+    <button id="btn" name="form1">Send</button>
+
+
+
+</body>
+</html>
+<script>
+
+// let btn=document.getElementById("btn");
+// // btn.style.cssText = "background-color: red; color:white;" 
+
+// // btn.setAttribute("style","color:white", "background-color:green")
+
+// btn.style.background ="pink";
+// btn.style.cssText += "background:red; border:1px solid green;";
+//  //multipe cheeze use krne ke liye
+
+
+
+let btn = document.getElementById("btn");
+// btn.style.cssText ="background-color:green; color:white";
+
+// btn.setAttribute("style", "color:white; background-color:orange");
+
+// btn.style.color ="yellow";
+btn.style.background = "green";
+//ek ek property aise change kr skte hai 
+//ye use krenge to inline style ye hata dega (jo html mai diya hoga wo inline)
+
+
+btn.style.cssText += "background:green; border: 1px solid black";
+
+//ek hi bar 1 se jyada  property use krni hai to aise change kr skte hai 
+
+
+
+
+
+
+</script>

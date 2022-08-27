@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+<body>
+    <h1>priya reddy</h1>
+</body>
+</html>
+
+<script>
+
+    //-------------------global variable v/s local varialble-------------------------------------------->
+
+
+
+//     let car = "audi";  //global variable  (out of function)
+
+//     function add(){
+
+//         let result = 33;  //--------------local variable  (in function) 
+//          //----------------isko hum function ke bahar use nahi kr skte varna error ayega, this disadvantage of  local variable. 
+        
+//         console.log(result);  
+
+//         // console.log(car);
+
+
+
+//     }
+
+//     function sub(){
+//          let result =50;
+//          console.log(result)
+// ;
+//     }
+
+//     add();
+//     sub();
+//     // console.log(car);
+//     //-----------global var function ke andar bahar kahi pai bhi use krlo o/p ayega but
+//     //----------local var sirf function ke andar hi work krega .
+  
+//   //local variable hum her  function mai ek hi nam ka  use kar skte hai but  
+//  // global varible mai hum aisa nahi kar skte error aa jaegya ya varna sirf second value le lega 
+
+//     // console.log(result);  
+
+//*********************************************************************************************************************>
+
+
+//-------------------------Anonymous function------------------------------------>
+
+//  // function show(){
+//     let show = function () {
+//     console.log("Hello World");
+
+// };
+
+// show();
+//=-------------------------------------------------------
+// function papa(){
+//     console.log("My father is my role model");
+//     alert("Parmeshwar");
+// }
+
+// papa();
+
+// setTimeout(function papa(){
+//     alert("Parmeshwar");
+// },3000);
+
+
+
+
+// function priya(){
+//     console.log("priya");
+// }
+
+// setTimeout(priya, 8000);//---------------------------simple function.
+
+// //----------------------------------------->
+
+// setTimeout(function priya(){
+//     console.log("priya");
+// }
+// , 8000);//--------------------------------------anynonyms function.
+
+
+// setTimeout(function gano(){
+//     console.log("Welcome");
+// }, 7000);--------------------------------------->anynonyms function.
+
+
+
+// //--------------------------------------------------------------->
+//  function show(){
+
+//     console.log("Hello World");
+
+//  }
+
+//  setTimeout(show, 8000);
+
+//  //------------------------------------------------->
+
+
+// setTimeout( function(){
+
+// console.log("Hello World");
+
+// }, 8000);
+
+// //------------------------------------------------->
+
+//.**********************************************************************************************>
+
+//---------------------(Immediately invoked function)---------------------------->
+
+//  let callfu = function () {
+//     console.log("Hello world!");
+//     alert("Hello world");
+// };
+
+// callfu();
+
+
+// (function () {
+//     console.log("Hello world!");
+//     alert("Hello world");
+// })();
+/*-------------------------------------*/
+
+
+// let praveen = function (){
+//     console.log("Welocome");
+//     alert("Hello world");
+
+// };
+
+// praveen();
+
+// (function (){
+//     console.log("Welocome");
+//     alert("Hello world");
+
+// })();
+
+
+//  (function (){
+//     console.log("priya");
+//     alert("Best triend");
+// } 
+
+// ())
+//------------------------------------------------>
+
+//  let piyu =  function(){
+//     console.log("My  Masai  frd");
+//     alert("piyu");
+
+//  };
+
+//  piyu();
+
+
+
+//  (function(){
+//     console.log("My  Masai  frd");
+//     alert("piyu");
+
+//  }())
+
+
+
+//-------------------------------------------------->
+
+// let string = "Hello";   //not declare do times this var  in outer function
+
+// (function () {
+// let string = "Hello";
+    
+//     console.log("string");
+//     alert("string");
+// })();
+
+//----------------------------------------------------->
+
+// (function(){
+
+//     let msg = "Hello third party";
+
+// function greet(){
+
+//     console.log(msg);
+// }
+
+// greet();
+
+
+// })(); 
+
+// //------------------0/p==>Hello third party  //"Hello Myscript
+
+
+
+// (function(){
+//     alert("priya-priyanka-piyu");
+// }());
+
+
+
+
+</script>
+<!-- <script src="thirdparty.js"></script> -->

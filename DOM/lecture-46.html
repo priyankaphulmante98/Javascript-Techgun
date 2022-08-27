@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <ul id="list">
+
+        <li>list 1</li>
+
+        <li>list 2</li>
+
+        <li>list 3</li>
+
+        <li>list 4</li>
+    </ul>
+</body>
+</html>
+
+<script>
+// let list1 = document.getElementById("list"); //parent
+
+// let item = document.createElement("li");
+// item.textContent="new list 5";
+
+// let pos = list1.firstElementChild.nextElementSibling.nextElementSibling;
+
+// list1.insertBefore(item,pos);
+
+
+let parent = document.body;
+
+let elm = document .createElements("h2");
+
+elm.textContent = "this is new element" ;
+let list =document.getElementById("list");
+parent.insertBefore(ele, list);
+
+
+
+</script>

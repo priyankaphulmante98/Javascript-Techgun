@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-lecture-Array</title>
+</head>
+<body>
+    <h1>priyanka reddy</h1>
+    </body>
+</html>
+<!-- <script src="index.js"></script> -->
+<script>
+
+    // let frd1 ="priya";
+    // let frd2 ="ashwini";
+    // let frd3 ="praveen";
+    // let frd4 ="raju";
+
+    // console.log(frd1);
+
+    // let frd= ["priya","ashiwini","praveen","raju"];
+
+    // let asset = [1,3,40.3,47]
+    // console.log(asset[4]) //------------------------//undefined------------------------->
+
+
+
+
+//     let frd1 =new Array("priya", "ashwini", "praveen", "raju")
+//     //   console.log(frd1[2])
+
+// console.log(frd1);
+
+
+//********************<access the array in one element************************************************>
+
+// let frd = ["priya", "ashwini", "praveen", "raju"]
+  
+// frd[1]="piyu";
+
+
+// console.log(frd);
+
+
+
+
+
+//<**********************operation of array *****************************>
+
+
+// let frd = ["priya", "ashwini", "praveen", "raju"]
+
+// frd.push("piyu");
+ 
+// console.log(frd)
+
+//<************************************************************>
+// let frd = ["priya", "ashwini", "praveen", "raju"]
+
+// frd.unshift("piyu"); //unshift====(starting) push===========(adiing last element)
+
+
+
+ 
+// console.log(frd)
+
+//<***************************************************************>
+
+
+// let frd = ["priya", "ashwini", "praveen", "raju"]
+
+// frd.pop(); //remove from last element
+
+// console.log(frd)
+
+
+
+// let frd = ["priya", "ashwini", "praveen", "raju"]
+
+// frd.shift(); //remove from first element
+
+// //pop() v/s shift()
+// //push() v/s unshift()
+
+
+// console.log(frd)
+
+
+//<********************************************************************>
+
+//-----------splice()--------------------------->
+
+
+// let frd = ["priya", "ashwini", "praveen", "raju"]
+
+// frd.splice(1,2); //1== which  start && 2==how many elements 
+
+// console.log(frd)
+
+
+//array empty are two methods 
+
+// let frd = ["priya", "ashwini", "praveen", "raju"]
+// // let frd = []
+
+// // frd.length= 0;
+// let position = frd.indexOf("praveen")
+
+// console.log(position);
+
+
+
+//length=======indexOf (same work)
+
+//actually string is  array character of.
+
+
+//<*********************************************************************>
+
+// let frd ="raju"; //false   (It is not an array its variable)
+//  let frd = ["priya", "ashwini", "praveen", "raju"]  -----------//true(its array)
+
+
+// let frd = "this is my frds sherya suman"
+
+// let myfrd = frd.split(" s");//===========>split means alg a;g kar dena.
+
+// console.log(myfrd);
+
+
+
+// let frd = ["priya", "ashwini", "praveen", "raju"]
+
+// // let frd = [this is my frds sherya suman]
+
+// //let myfrd = frd.join(" ");// word ke bich mai space aa jaega 
+
+
+// let myfrd = frd.join("******");// word ke bich mai ********** aa jayega 
+
+// console.log(myfrd);
+
+//<*******************************************************************************>
+//array concation 
+// let frd = ["priya", "ashwini", "praveen", "raju", "piyu", "chaitnya"]
+
+// let frd1= ["priyanka", "priti"]
+
+// // let NewFrd = frd.concat(frd1);
+
+// console.log(NewFrd);
+
+
+
+//multidiamention  array----------------------------------->
+//aaray ke andar array store krna hai to -------------->
+
+
+// let frd = ["priya", "ashwini", "praveen", "raju", "piyu", "chaitnya"]
+
+// let MasaiFrd =[
+//     ["priya",["10","50"]], 
+//     ["ashwini", "20"],
+//     ["praveen",'30'],
+//     ["piyu" , '40']
+
+//];
+//how to access multidimentional array!!!!!-------->
+
+// var fetch = MasaiFrd[2][0]  //praveen
+// var fetch = MasaiFrd[1][0]// ashiwini
+// var fetch = MasaiFrd[0][0] //priya
+// var fetch = MasaiFrd[2][1] //30
+
+// var fetch = MasaiFrd[0][1][0] //10;
+
+// var fetch = MasaiFrd[0][1][1] //50
+
+// console.log(fetch);
+
+//<**********************************************************************>
+
+// let frd = ["priya", "ashwini", "praveen", "raju", "piyu", "chaitnya"]
+
+// let frdlength=frd.length
+// for(let p=0; p<frdlength; p++){
+// console.log(`Element ${p} is ${frd[p]} \n`);
+// }
+
+//output=================================>
+// Element 0 is priya
+
+//  Element 1 is ashwini
+
+// Element 2 is praveen
+
+// Element 3 is raju
+
+// Element 4 is piyu
+
+// index.html:226 Element 5 is chaitnya
+
+//<****************************************************************************>
+
+//-----------------forEach()------------------>
+
+
+
+
+let frd = ["priya", "ashwini", "praveen", "raju", "piyu", "chaitnya"]
+
+
+
+frd.forEach(myfrd); //forEach
+
+function myfrd(value){
+
+    console.log(value);
+
+}
+
+//foreach se sabko ek ek elment ko ek hi bar mai access kar skte hai 
+
+//----------output-------->
+
+priya
+ashwini
+praveen 
+raju
+piyu
+chaitnya
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

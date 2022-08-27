@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:skyblue;
+        }
+        #box{
+            height:300px;
+            width:300px;
+            background-color: orange;
+            border:1px solid black;
+            padding:50px;
+
+        }
+        #btn{
+            height:50px;
+            width:100px;
+            border-radius: 10px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div  id="box">
+        <button id="btn">Click me</button>
+    </div>
+</body>
+</html>
+<script>
+//Event bubbling  & Event capturing 
+let d =document.getElementById("box");
+let b= document.getElementById("btn");
+
+b.addEventListener('click', btnClicked);
+d.addEventListener('click', divClicked);
+document.body.addEventListener('click', bodyClicked);
+
+function btnClicked(e){
+    console.log("btn clicked.....")
+    e.stopPropagation();
+}
+
+function divClicked(Event){
+    console.log("div clicked.....")
+    event.stopPropagation();
+
+}
+function bodyClicked(){
+    console.log(" body clicked.....")
+}
+
+</script>

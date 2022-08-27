@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background-color: red;
+        } */
+    </style>
+</head>
+<body>
+    <button id="btn1" >google</button>
+    <button id="btn2">yahoo</button>
+    <button id="btn3">Close</button>
+
+
+
+</body>
+</html>
+<script>
+    let btn1= document.getElementById("btn1");
+    let btn2= document.getElementById("btn2");
+    let btn3= document.getElementById("btn3");
+ let win;
+    let url="https://www.google.com"
+    let features="height=500, width=500"
+
+    btn1.addEventListener("click", function(){
+         win=window.open(url, 'google', features);
+    });
+    btn2.addEventListener("click", function(){
+        window.open("https://www.yahoo.com", 'google')
+    })
+
+    btn3.addEventListener("click", function(){
+        win.close();
+    })
+    
+// console.log(window.innerHeight); //348
+// console.log(window.innerWidth)//1124
+
+// console.log(window.outerHeight); //345
+// console.log(window.outerWidth)//1156
+
+
+</script>

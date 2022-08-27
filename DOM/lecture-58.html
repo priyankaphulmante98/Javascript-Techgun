@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>load Events in javascript</title>
+</head>
+<body>
+    <!-- dom content loaded==> 
+    thr browser fully loaded html and completed building the domtree. however, it hasn't loaded exterenal resourses like stylesheets and images.
+    in this event, you can start selecting DOM nodes or initialize the interface. -->
+
+
+    <!-- load==>
+    the browser fully loaded the html and also external resources like images and stylesheets.
+    when you leave the page, the following events fire in sequence: -->
+
+    
+    <img  id="img1"width="500" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkShruy7AKsz5TpM888oiMPF-YLCgG0nFV8Q&usqp=CAU"/>
+         
+    //o/p==>dom tree created
+                fully loaded
+
+
+
+</body>
+</html>
+<script>
+
+let img1= document.getElementById("img1");
+
+    window.addEventListener("DOMContentLoaded", function(){
+        console.log("Fully loaded");
+    });
+
+    img.addEventListener("load", function(){
+        console.log("Fully Loaded");
+    })
+
+
+</script>

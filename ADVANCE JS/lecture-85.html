@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Array destructring -->
+
+</body>
+</html>
+<script>
+
+// let book = ["Advance JS", 200, 150, ["publication", 2015]];
+// // console.log(book[0]); //Advance js
+// // console.log(book[1]); //200
+// // console.log(book[2]); //150
+
+// // let name = book[0];
+// // let pages = book[1];
+// // let price = book[2];
+// // console.log(name);
+// // console.log(pages);
+// // console.log(price);
+
+// let[name, pages =500, price, [publication, year] ]= book;  //array destructring
+// // console.log(price);
+// // console.log(pages);
+// // console.log(name);
+// // console.log(publication); //undefined
+// console.log(year);
+
+
+function book(){
+    //do something 
+    // return "book";
+    return ["advance js", 200];
+}
+// let name= book();
+// console.log(name);
+
+let [book_title, price] =book();
+console.log(book_title);
+console.log(price);
+
+</script>

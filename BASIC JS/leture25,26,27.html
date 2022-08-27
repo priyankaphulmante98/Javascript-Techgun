@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <h1>priyanka reddy (ppp)</h1>
+    <h1> output see the console</h1>
+</body>
+</html>
+
+<script>
+// //array-------------------let person=[];
+
+// //object :---------------------------------------------------->
+
+// let person ={
+//     firstName:"priya",
+//     lastName:"phulmante",
+//     fatherName:"parmeshwar",
+//     motherName:"Annpurna"
+// };
+
+
+// //modified karna property value ko
+// person.age=23;
+// person.firstName="vaishu"
+
+
+
+//  //person.firstName//-------------------------use simple dot method
+//  //console.log(person);
+
+// //console.log(person.firstName);//-------------------. method se access
+// // console.log(person["firstName"]);//------------array method se access
+// // console.log(person);//-----------------------------array mai lena hai to 
+
+
+
+// delete person.lastName;//---------------delete property.
+
+// console.log("height" in person);// --------------------true/flase(in operstor)
+ 
+// //for in loop----------------->
+
+// // for(let key in person){
+// //     // console.log(key);
+// //     console.log(key + ": "+person[key]);
+
+// // }
+
+
+
+
+// let person ={
+//     firstName:"priya",
+//     lastName:"phulmante",
+//     fatherName:"parmeshwar",
+//     motherName:"Annpurna",
+
+
+//     sayHello: function (){
+//         console.log("Hello ");//--------------------------1st method
+//     }
+// };
+
+
+
+
+
+// let person ={
+//     firstName:"priya",
+//     lastName:"phulmante",
+//     fatherName:"parmeshwar",
+//    sayHello()  {
+
+//     console.log("say grllo");                                                                                                                                                                                                                                                                                             
+//    }
+//    
+    
+
+    // sayHello: function (){
+    //     console.log("Hello ");//--------------------------1st method
+   // }
+
+
+
+
+// person.age=23;
+// person.sayhello = function(){  //-------call the anynomas function------>
+
+//     console.log("Hello");
+// }
+
+// person.sayhello();
+
+//---------------------------------------------------------->
+// function greet(){
+
+//     console.log("Hello");
+// }
+
+
+// person.sayHello = greet;
+
+// person.sayHello()
+//---------------------------------------------------------->
+
+//----------------------"this" in object-------------------------->
+
+
+// let person ={
+//     firstName:"priya",
+//     lastName:"phulmante",
+//     fatherName:"parmeshwar",
+//    sayHello()  {
+
+  
+//     // console.log(" hello I am  "+ person.firstName +" and I have a "+ car.brand +" car");                                                                                                                                                                                                                                                                                             
+  
+//       console.log(" hello I am  "+ this.firstName +" and I have a "+ car.brand +" car");                                                                                                                                                                                                                                                                                             
+//      //same property mai access krna hai to this keyword use krna hai.  
+
+
+//    }
+//    };
+   
+// let car = {
+//     brand:"tata",
+//     model:"safari"
+// }
+    
+// person.sayHello();
+
+//<===================================================================================>
+
+//=-----------------------(Math Object)---------------------------------->
+
+// // Math.PI
+// console.log(Math.PI)//------------3.14(op)
+// consolelog(Math.E);//-------------(2.41)(op)
+
+
+// var x=4.7;
+
+// console.log(x);//----------------4.7(op)
+
+
+// var x=Math.round(4.7);
+
+// console.log(x); //-----------------5(0utput)
+
+
+
+// var x=Math.ceil(4.2);
+
+// console.log(x);//-------------------5(op)
+
+
+
+
+// // var x=Math.floor(4.7);
+
+// var x=Math.floor(4.1);//-------------4(op)
+
+// console.log(x);//-------------------4(op)
+
+
+
+
+// var x=Math.trunc(4.2);
+//  console.log(x);//-------------------4(op) point hata deta hai
+
+
+
+
+//  var x=Math.pow(2, 3); //In bracket first put the value and then put the power
+
+//  console.log(x);//-------------------8(op)//power nikal skte ho .
+
+
+
+// var x=Math.sqrt(4); 
+
+// console.log(x);
+
+
+
+// var x=Math.min(3,5,-3,66,734); 
+
+// console.log(x);
+
+
+
+
+// var x=Math.max(3,5,-3,66,734); 
+
+// console.log(x);
+
+
+//****************************************************************************************>
+
+//----------------------Random Number------------------------>
+
+
+
+// // var x= Math.floor(Math.random()*6); //(0-5)
+// var x= Math.floor(Math.random()*7); //(0-6)
+
+// console.log(x);
+
+
+
+// var x= Math.floor(Math.random()*7)+1; //(1-7)
+
+// console.log(x);
+
+
+//upper limit - lower limit random number (15-25)
+
+
+
+
+// var x= Math.floor(Math.random()*(25-15))+15;
+
+// console.log(x);
+
+
+//--------------------------------------------------------->
+
+
+// function getRandom(min, max){
+
+
+//     var x= Math.floor(Math.random()*(max - min+1))+min;
+//     return x;
+
+// }
+
+// console.log(getRandom(10, 20));
+
+
+//****************************************************************************************>
+
+
+//--------------------(Date Object)--------------------------->
+
+
+// // let x = "2021-01-25";
+// // let x = "jan-25-2021";
+
+// // let x = new Date(year, month, date, hours, minutes, second, millisecond );
+// // let x = new Date(2018,11, 02, 10, 33, 10);
+// let x = new Date("october 13, 2018 11:12:33");
+
+
+// //,-------------------(get function)------------------------->
+// // x.getTime();
+// console.log(x.getTime()); //3545959869586
+// console.log(x.getFullYear());  //--------2018
+// console.log(x.getMonth());  //-----------9
+// console.log(x.getDate());    //------13
+
+// 0=jan
+// -
+// -
+// -
+// -
+// -
+// -
+// -
+// 11=dec
+
+
+//--------------------(set function)-------------------------->
+
+// let x = new Date("october 13, 2018 11:12:33");
+// x.setYear(2020);
+// x.setMonth(2);
+// x.setDate(2);
+// x.setFullYear(2020);
+// // x.setMinute(33);
+// x.setSeconds(2)
+
+// console.log(x);
+
+
+
+
+// let x = new Date("october 13, 2018 11:12:33");
+// x.setDate(x.getDate()+ 50);
+
+// console.log(x);
+
+
+//------------------------after 50 days which date--------------->
+
+// let x = new Date("october 13, 2018 11:12:33");
+// let y = new Date("october 13, 2018 11:12:33");
+// y.setDate(x.getDate()+ 50);
+
+// console.log(x);
+// console.log(y);// 0p-------------------2 dec.
+
+//-------------------compare date------------------------------>
+
+//  let x = new Date("october 13, 2018 11:12:33");
+//  let y = new Date();
+
+//  if(y>x){
+//     console.log("x is past date");
+
+//  }else if(x>y){
+//     console.log("x is future date");
+//  }
+// else{
+//     console.log("X is same date");
+// }
+
+//****************************************************************************************>
+
+
+//-----------------(new keyword se object)---------------------------->
+
+// var person ={
+//     name: "priya",
+//     age: 23,
+// }
+// console.log(person.name)
+
+
+
+// var person =new Object();
+//    person.name = "priya",
+//     person.age = 23,
+
+// console.log(person.name,person.age)
+// // console.log(person.age);
+
+
+//******************************************************************************************>
+
+//------------------(getters and setters method)------------------------------->
+
+//function se acess-------------------------------->
+
+// var person ={
+//     name: "priya",
+//     age: 23,
+
+//     getname:function(){
+//         return this.name.toUpperCase();
+//     }
+// };
+
+// // console.log(person.name.toUpperCase());
+
+// console.log(person.getname());
+
+
+
+
+//--------------------- property se acess--------------------------->
+
+// var person ={
+//     name: "priya",
+//     age: 23,
+
+//     get getname(){
+//         return this.name.toUpperCase();
+//     },
+
+//     set setname(n){
+//         this.name = n.toUpperCase();
+//     }
+// };
+
+// person.setname = "priyanka";
+// console.log(person);
+
+// // person.name = "priyanka";
+
+
+// // console.log(person.getname());
+
+
+//----------------getters---------------->
+
+ //value get krne ke liye use krte hai. 
+//value change krke /manipulate keke value object ke bahar lana hai to getter use krte hai.
+
+//---------------setters----------------->
+
+//comment ko maipulate karke save krne ke liye setter method use krte hai.
+
+//**********************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

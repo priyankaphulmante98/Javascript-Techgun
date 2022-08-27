@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="intro">
+        <li>list 1</li>
+        <li id="intro">list 2</li>
+        <li>list 3</li> 
+         <li>list 4</li>
+    </ul>
+
+
+     <ul>
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li> 
+         <li>list d</li>
+
+    </ul>
+</body>
+</html>
+
+
+<script>
+ //<*******************(traversing Elements)*********************************>
+
+// // let one = document.getElementById("intro");
+// // console.log(one);
+
+
+// let prt = one.parentElement;
+// console.log(prt);
+
+
+
+
+// let one = document.getElementById("intro");
+// let prt = one.parentElement;
+
+// prt.innerHTML="hello priya reddy";
+// console.log(prt);
+
+
+
+
+// var  one = document.getElementById("intro");
+//  var node= one.firstElementChild;
+
+// // node.innerHTML="priya reddy";
+// console.log(node);
+
+
+
+// var  one = document.getElementById("intro");
+//  var node= one.lastElementChild;
+
+// // node.innerHTML="priya reddy";
+// console.log(node);
+
+
+
+// var  one = document.getElementById("intro");
+//  var node= one.children;
+
+//  for(let p=0; p<node.length; p++){
+//     node.innerHTML="priya Reddy"
+//  }
+
+// // node.innerHTML="priya reddy";
+// console.log(node);
+
+
+let  one = document.getElementById("intro");
+let  node= one.previousElementSibling;
+// console.log(node);
+
+ for(let p=0; p<node; p++){
+    node.innerHTML="priya Reddy"
+ }
+
+
+
+
+
+</script>

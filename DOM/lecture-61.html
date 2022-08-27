@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    height:2000px;
+
+}
+    </style>
+</head>
+<body>
+    <h1>hello priya</h1>
+</body>
+</html>
+<script>
+    // window.addEventListener("scroll", function(){
+    //     console.log("scrolling");
+    // })
+
+    // window.addEventListener("wheel", function(event){
+    //    if(event.deltaY <0){
+    //     console.log("scrolling up..");
+    //    }else if(event.deltaY > 0){
+    //     console.log("scrollong down..");
+    //    }
+    // });
+
+
+
+    
+    window.addEventListener("scroll", function(){
+        if(window.pageYOffset > 150){
+document.body.style.background = "orange";
+        }else{
+            document.body.style.background = "green";
+        }
+    });
+</script>

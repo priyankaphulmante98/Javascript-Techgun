@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action ="">
+        <input type="text" id="myInput">
+
+    </form>
+</body>
+</html>
+<script>
+    
+    let x= document.getElementById("myInput");
+
+    x.addEventListener("focus", myFocusFunction);
+    x.addEventListener("Blur", myBlurFunction);
+
+//        x.addEventListener('change', function(){
+//       console.log(this.value)
+//   });
+x.addEventListener('input', function(){
+      console.log(this.value)
+  });
+
+    function myFocusFunction() {
+       x.style.background= "orange";
+    }
+
+    function myBlurFunction(){
+        x.style.background="teal";
+
+    }
+    
+
+</script>

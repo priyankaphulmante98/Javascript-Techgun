@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom events</title>
+</head>
+<body>
+ 
+
+<!-- <button id="btn" onclick="myfunction()">click me</button> -->
+    
+<button id="btn">Click me</button>
+</body>
+</html>
+<script>
+
+
+
+// function myfunction(){
+//     alert("signup sucessfully!")
+// }
+
+
+// let btn=document.getElementById("btn");
+// btn.addEventListener("click",myfunction);
+
+
+let btn=document.querySelector("#btn");
+
+btn.addEventListener("click",function(){
+    alert("signup is sucessfully");
+});
+//used for the anyonomus function
+
+
+btn.addEventListener("mouseover",function(){
+alert("login is subessful");
+});
+
+btn.addEventListener("mouseout",function(){
+alert("login is subcessful");
+
+
+ 
+});
+
+
+</script>

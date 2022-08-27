@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<ul>
+    <li class="c1 pl">list 1</li>
+    <li id="first">list 2</li>
+    <li class="c1">list 3</li>
+
+</ul>
+<h3>heading-1</h3>
+<div id="div1">
+<p>paragraph-1</p>
+<h3>heading-2</h3>
+<p>paragraph-2</p>
+<h3>heading-3</h3>
+<p>paragraph-3</p>
+</div>
+
+</body>
+</html>
+
+
+<script>
+
+//<----------------------(Select an element By "Tag Name")------------------------------->
+
+let div1 = document.getElementById("div1");
+
+let one =div1.getElementsByTagName("h3");
+
+for(let p=0; p<one.length;  p++){
+    one[p].innerHTML = "hello priya";
+}
+
+
+</script>

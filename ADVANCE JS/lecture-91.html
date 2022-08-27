@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- prototype and prototypal inheritance in js -->
+
+</body>
+</html>
+<script>
+
+// let person1={};
+
+// console.log(person1); //{ }
+
+// let person2 = {
+//     name: "priya"
+// }
+// console.log("person2")  //priya
+// console.log(person2.hasOwnProperty('name')); //true
+
+// // her object ke sath prototype attach hota hai..
+
+// function person(n){
+//  this.name= n;
+// }
+
+// let person3 = new person("ajeet");
+// console.log(person3);
+
+function Creature(ls){
+    this.lifespan =ls;  //property
+
+}
+
+Creature.prototype.breath  = function(){
+    console.log("breathing...");          //method
+}
+
+let Creature1 = new Creature(100);
+console.log(Creature1);            //object 
+
+
+
+function Person(first, last, a){
+            
+       this.firstName=first;
+       this.lastName=last;
+       this.age=a;           //---------- only proprety copy
+
+    }
+    
+    Person.prototype.fullName = function(){
+        console.log(this.firstName+ " " + this.lastName); //----------connect method
+
+
+    Person.prototype.__proto__= object.create(Creature.prototype);
+}
+
+ 
+let person1 = new Person("priya", "reddy", 23);
+let person2 = new Person("priti", "reddy", 22);  //object 
+
+
+
+console.log(person1.fullName());
+ console.log(person2.breath);  
+// prototype chaning
+
+
+
+
+
+
+
+
+
+
+
+</script>

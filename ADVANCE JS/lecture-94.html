@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    
+ </body>
+ </html>
+ <script>
+    // callback function
+
+      function sayHello(){
+        console.log("hello......");
+      }
+      function sayHi(){
+        console.log("hi......");
+      }
+      function add(num1, num2, callback){
+        console.log(num1 * num2);
+        callback();
+
+      }
+ //   let a =10;
+    //    let b=20;
+ 
+
+    // add(12,12, sayHello);
+
+    // add(12,12, sayHi);
+
+    add(12,12, function(){
+        console.log("by by");
+    });
+   
+   
+   
+
+
+
+
+
+
+ </script>

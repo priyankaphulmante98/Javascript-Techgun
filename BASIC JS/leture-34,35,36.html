@@ -1,0 +1,230 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1>object constructor function </h1>
+
+<h1>output see in console</h1>
+
+</body>
+</html>
+
+<script>
+
+//  var student1 ={
+//     firstName: "priya",
+//     lastName: "phulmante",
+//     class: 3,
+//     rollNo: 20,
+//     age: 23
+//  }
+ 
+//  var student2 ={
+//     firstName: "priyanka",
+//     lastName: "reddy",
+//     class: 5,
+//     rollNo: 29,
+//     age: 24
+//  }
+
+ //class kijagh pai object constructor function use krte the javascript mai .
+ //but ES6 mai js mai class aaa gaya hai 
+
+ //blueprint banana hai to object cpnstructor funtion use krte hai
+
+
+ //-----------(object constructor function)----------------------------->
+
+//  function Student(first, last, cls, roll, age){
+//     this.firstName=first;
+//     this.lastName=last;
+//     this.class=cls;
+//     this.rollNo=roll;
+//     this.age=age;
+
+//  }
+//  var Student1 = new Student("priya","phulmante",5,29,24);
+//  var Student2 = new Student("priyanka","kumari",5,29,24);
+//  var Student3 = new Student("prinku","reddy",5,29,24);
+
+//  console.log(Student1);
+//  console.log(Student2);
+//  console.log(Student3);
+
+
+//--------------------------------------------------->
+
+
+// function Student(first, last, cls, roll, age){
+//     this.firstName=first;
+//     this.lastName=last;
+//     this.class=cls;
+//     this.rollNo=roll;
+//     this.age=age;
+
+//  }
+ 
+//  var Student1 = new Student("priya","phulmante",5,29,24);
+//  Student1.nationallity = "Indian";
+
+//  Student1.name = function(){
+//     return this.firstName +" "+ this.lastName;
+//  }
+
+//  console.log(Student1.name());
+
+//------------------------------------------------------->
+
+
+// function Student(first, last, cls, roll, age){
+//     this.firstName=first;
+//     this.lastName=last;
+//     this.class=cls;
+//     this.rollNo=roll;
+//     this.age=age;
+//     this.nationallity = "Indian";
+//     this.name = function(){
+//     return this.firstName +" "+ this.lastName;
+//  }
+
+//  }
+ 
+//  var Student1 = new Student("priya","phulmante",5,29,24);
+//  var Student2 = new Student("priyanka","phulmante",5,29,24);
+//  var Student3 = new Student("prinku","phulmante",5,29,24);
+
+
+
+//  console.log(Student1)
+//  console.log(Student2)
+//  console.log(Student3)
+ 
+
+
+//****************************************************************************************>
+
+//----------------------(Object Prototypes)------------------------------>
+
+// function Student(first, last, cls, roll, age){
+//     this.firstName=first;
+//     this.lastName=last;
+//     this.class=cls;
+//     this.rollNo=roll;
+//     this.age=age;
+//  }
+
+//  Student.prototype.nationallity = "Indian";
+//  Student.prototype.name = function(){
+//    return this.firstName +" "+ this.lastName;
+//  }
+
+//  var Student1 = new Student("priya","phulmante",5,29,24);
+//  var Student2 = new Student("priyanka","phulmante",5,29,24);
+//  var Student3 = new Student("prinku","phulmante",5,29,24);
+
+//  console.log(Student1)
+//  console.log(Student2)
+//  console.log(Student3)
+
+//object constructor ko prototype ke throgh jake change kr skte is method se.
+
+
+//*****************practise****************************>
+// function  Student(name, last, place, age){
+//       this.firstName  = name;
+//       this.lastName = last;
+//       this.place=place;
+//       this.age=age;
+
+// }
+// Student.prototype.nationality ="Indian";
+// Student.prototype.name = function(){
+//     return this.firstName+" "+ this.lastName;
+// }
+// var Student1 = new Student("priya", "phulmante", "latur", 23);
+
+// console.log(Student1);
+
+//******************************************************************************************>
+//---------------------(Nested Object)--------------------->
+
+// var user = {
+// id:101,
+// email:"priyankaphulmante98@gmail.com",
+
+// personalInfo:{
+
+//     name:"piya",
+
+//     address:{
+//         colony:"teacher colony",
+//         street:"latur-Naded-Road",
+//         city:"shirur tajband",
+//         country:"India"
+//     }
+
+// }
+// };
+// // console.log(user);
+// console.log(user.personalInfo.address.country);
+
+
+//*********************************************************************************************>
+
+//-----------------------(Hoisting)------------------------>
+
+
+// function hello(){
+//     console.log("Hello World");
+//     alert("priya");
+// }
+
+// hello();
+
+ 
+
+//declaration  bad mai or call pehle krna iske ko hoisting kehte hai 
+//declartion ko upper apne aap ute hai oh hoisting hota hai.
+
+// var x; //declration
+
+// x=5; //assignmnet
+
+// console.log(x); //call
+
+// var x=5;
+// console.log(x);
+
+// var x;     //-------(o/p=5);
+
+// var x;  
+// console.log(x);
+
+   //-------(o/p=5);
+
+   //"use strict"   //var agar declare nahi kiya hai to strictly oh bata dega .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

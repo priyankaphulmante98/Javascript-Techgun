@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body>
+    <!-- <h1>Document object model</h1>
+    <h1>priyanka reddy</h1>
+    <p>output see the console</p> -->
+
+<ul>
+    <li class="c1 pl">list 1</li>
+    <li id="first">list 2</li>
+    <li class="c1">list 3</li>
+
+</ul>
+
+<script>
+//<----------------------(Select an element By "Id")------------------------------->
+
+// let one = document.getElementById("first");
+// console.log(one);
+
+
+// let one = document.getElementById("first");
+// console.log(one.innerHTML);//-------------------value get krne ka tarika 
+
+//<----------------------(Select an element By "Class")------------------------------->
+
+// let one = document.getElementsByClassName("c1");
+// // console.log(one.length);
+// // console.log(one);
+// // one.innerHTML = "<p> hello </p>";
+
+// for(let p=0; p<one.length;  p++){
+//     one[p].innerHTML = "<p> hello </p>";
+// }
+
+let one = document.getElementsByClassName("c1 pl");
+
+for(let p=0; p<one.length;  p++){
+    one[p].innerHTML = "<p> hello </p>";
+}
+
+
+</script>

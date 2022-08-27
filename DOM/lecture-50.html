@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    //beforebegining
+
+<div id="intro">  
+
+    //afterbegining
+
+    <h2>heading</h2>
+    <p>this is a p tag</p>
+
+    //beforeend
+
+    </div>
+
+    //afterEnd
+
+</body>  
+</html>
+<script>
+    
+    let elm=document.getElementById("intro");
+ 
+    let html="<h1>New h1</h1>";
+    elm.insertAdjacentHTML("beforebegin",html);
+    elm.insertAdjacentHTML("afterbegin",html);
+    elm.insertAdjacentHTML("beforeEnd",html);
+    elm.insertAdjacentHTML("afterEnd",html);
+</script>

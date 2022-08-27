@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="btn">Click me!</button> -->
+
+    <button id="btn">Click me</button>
+
+</body>
+</html>
+<script>
+//     let btn = document.getElementById("btn");
+
+//     function priya(){
+//         console.log("click1 activated");
+//     }
+
+
+//     function priti(){
+//         console.log("click2 activated");
+//     }
+
+//     btn.addEventListener("click", priya);
+//     btn.addEventListener("click", priti);
+
+
+// // o/p==> click1 activated 
+// //        click2 activated
+
+// //----------------------Remove addeventlistner-------------------->
+
+//   btn.removeEventListener("click",priti);
+
+// //o/p==>click1 activated
+
+ //practise============>
+ 
+let btn=document.getElementById("btn");
+
+function praveen(){
+    alert("Busy boy");
+}
+
+function raju(){
+    alert("cool boy");
+}
+
+function piyu(){
+    alert("good girl");
+}
+
+
+btn.addEventListener("click", praveen);
+btn.addEventListener("click", raju);
+btn.addEventListener("click", piyu);
+
+btn.removeEventListener("click", piyu);
+</script>

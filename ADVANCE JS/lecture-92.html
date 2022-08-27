@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         <!-- ES6- class and objects -->
+</body>
+</html>
+<script>
+//     class person{
+//          constructor(n,a){
+//           this.name = n;
+//           this.age = a;        //constructor method
+//          }
+
+//         static sproperty = "something";   //class hi call hoga static property
+
+//         sayHi(){
+//             console.log("hi.....");  //normal method/prototype mathod
+//          }
+//         static hello(){
+//             console.log("hello"); //static method
+//          }
+//     }
+
+// let person1 = new person("priya", 23); 
+// console.log(person1);   
+
+// person.hello();   
+
+
+// console.log(person.sproperty);    //hello
+// console.log(person1.sproperty);  //undeifned
+
+
+// class human{
+       
+//     constructor(n,a,s){
+//         this.name=n;
+//         this.age =a;
+//         this.skils=s;
+//     }
+//     sayHi(){
+//         console.log("hello priya"); // ye wala human1 se banega 
+//     }
+
+//     static hello = "priya i am here"
+//     static ppp(){
+//         console.log("hi hi hi hi");
+//     }
+// }
+
+// let human1 = new human("priyaka", 23, "js");
+// // console.log(human1);
+// // human1.sayHi();
+// // console.log(human.hello);
+// human.ppp();
+
+ //-------------------------inheritance------------------------------------>
+
+// class employ{
+//     constructor(n){
+//       this.name=n;
+
+//     }
+//     msg(){
+//         console.log("priya i am here");
+//     }
+// }
+
+// class manager extends employ{
+//  constructor(p,d){
+//     super(p)
+//     this.department = d ;
+//  }
+
+//  msg(){
+//     console.log("hello")
+//  }
+//  info(){
+//     this.msg();
+//     super.msg();
+//      console.log(this.name + " is a manager of department " + this .department)
+//  }
+// }
+
+// class admin extends manager{
+
+
+// }
+// let admin1 = new admin("priti" , "system engineer");
+// console.log(admin1)
+
+// let manager1 = new manager("priya", "web developer");
+// // console.log(manager1);
+// // console.log(manager1.info());
+
+//-------------------------------------------------------------->
+// class employ{
+//     constructor(n,s){
+//         this.name = n;
+//         this.skills=s;
+//     }
+//      static msg(){
+//         console.log("hello")
+//     }
+//      msg(){
+//         console.log("hello")
+//     }
+// }
+
+
+// class admin extends employ{
+     
+//     constructor(n,s,h){
+//         super(n,s)
+//     this.hooby= h;
+
+// }
+// }
+
+
+// // let employ1 = new employ("priya", "javascript")
+// // console.log(employ1)
+
+// let admin1 = new admin("priti", "js","swim");
+// console.log(admin1);
+
+// // console.log(employ1.msg());
+
+//-------------------------------------------------------------------->
+
+//-------------------public or private property------------------------->
+
+// class emp{
+//     #name ="";
+//     constructor(n){
+//         // this.name=n;  public
+//         this.#name =n;
+//     }
+
+//     // getName(){
+//     //       console.log(this.name); //public
+//     // }
+
+//     #getName(){
+//         console.log(this.#name); //private
+//     }
+//     pubFun(){
+//         this.#getName();
+//     }
+// }
+
+// // let emp1 = new emp("priya");
+// // console.log(emp1.name); //public - direct object se call hota hai
+
+
+// let emp1 = new emp("priya");
+// // console.log(emp1.getName()); //private - direct object se call nahi hota hai
+
+// console.log(emp1.pubFun());   
+
+//------------------------------------------------------------------------------>
+
+//-------------------Mixing--------------------------------->
+
+let method ={    // create a object 
+     sayHi(){
+        console.log("hi.....");   //method
+     },
+     sayBi(){
+         console.log("by....")
+     }
+     
+}
+
+let method2={    // create a object 
+     sayHi(){
+        console.log("hi.....");   //method
+     },
+     sayBi(){
+         console.log("by....")
+     }
+     
+};
+
+class user{            //create a class
+    constructor(){
+        this.name="priya";
+    }
+};
+class admin extends user{            //create a class
+   
+    
+}
+
+// Object.assign(user.prototype, method)
+
+
+
+// let user1= new user()        //access
+// console.log(user1)
+// console.log(user1.sayHi());
+
+// Object.assign(admin.prototype, method);
+
+let admin1 = new admin();
+Object.assign(admin.prototype, method);
+Object.assign(admin.prototype, method2);
+// console.log(admin1.sayBi());
+
+console.log(admin1);
+
+
+
+
+</script>

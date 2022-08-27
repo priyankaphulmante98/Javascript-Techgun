@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE-SLIDER</title>
+    <style>
+    body{
+        margin:0;
+    }
+    .slide-container{
+        position:relative;
+        width:100%;
+
+    }
+
+    .slide img{
+        width:100%;
+    }
+   .arrow{
+    cursor: pointer;
+    position: absolute;
+    top:45%;
+    color:black;
+    background-color:white;
+    padding : 8px 18px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+   }
+  .next{
+    right:10px;
+  }
+  .prev{
+    left:10px;
+  }
+  .caption{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color:rgba(0,0,0,0.5) ;
+    padding: 15px 0px;
+  }
+  .slide{
+    display: none;
+  }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+
+    <div class="slide">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQoaBYfZakdkC8X28O18vyN8Aj0oFWKRIcQ&usqp=CAU" alt="" >
+    <div class="caption">AYUSH & BARKHA</div>
+
+    <div class="slide">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwEjz_YuxiEHn0QNBUI1cSPvxiJDO6Lwcug&usqp=CAU" alt="" >
+    <div class="caption">AYUSH & BARKHA</div>
+                
+    <div class="slide">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPJeThX-Cd1RPPrFyjqItbjQNK7WKB1MrdsQ&usqp=CAU" alt="" >
+    <div class="caption">AYUSH & BARKHA</div>
+                    
+    <div class="slide">
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt8tqH1dI0HZvhfq98Q_WUMWgUDvUW9yB9VQ&usqp=CAU" alt="" >
+     <div class="caption">AYUSH & BARKHA</div>
+
+                     
+    <div class="slide">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThAf8G8VNhSccyUcK_2ZHPIsFE0PGU9gI-tw&usqp=CAU" alt="" >
+    <div class="caption">AYUSH & BARKHA</div>
+                         
+    <div class="slide">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRekD_XRAS54KCU4gMGaRqarXNW0GIockiX2A&usqp=CAU" alt="" >
+    <div class="caption">AYUSH & BARKHA</div>
+       
+    </div>
+
+    <div>
+    <span class="arrow prev" onClick="contorller(-1)">&#10094;</span>
+    <span class="arrow next" onClick="contorller(+1)">&#10095;</span>
+    </div>
+
+</body>
+</html>
+<script>
+    //images =6 (0,1,2,3,4,5)
+    //     //left
+    //     flag = 2 + 1 (-1) = 1
+       
+    //     //right
+    //     flag= 2 + 1 =3
+
+
+
+    let flag=0;
+
+    function contorller(x){
+        flag=flag+x;
+        slideshow(flag);
+    }
+
+  Slideshow(flag);
+
+function Slideshow(num){
+    let slides= document.getElementsByClassName("slide"); 
+
+    if(num == slides.length){
+        flag = 0;
+        num= 0;
+    }
+
+    if(num < 0){
+        flag = slides.length-1;
+        num=slides.length-1
+    }
+    for(let y of slides){
+        y.style.display = "none";
+    }
+    
+    
+     slides[num].style.display ="block";
+    
+}
+
+
+
+</script>
